@@ -1,0 +1,35 @@
+﻿<Page x:Class="KN.Connect"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KN"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Connect" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="1" Grid.RowSpan="6" Grid.ColumnSpan="3" Background="BlueViolet">
+        </Grid>
+        <Label x:Name="tempIP" Grid.Row="3" Grid.Column="1" Grid.RowSpan="2" Height="30" HorizontalContentAlignment="Center" MouseDown="tempIP_MouseDown"/>
+        <TextBox x:Name="Nicknametb" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="Никнейм" Height="40" Grid.Row="2" Grid.Column="1" Foreground="#FFBFA9A9" FontSize="18" GotFocus="Nicknametb_GotFocus" LostFocus="Nicknametb_LostFocus"/>
+        <TextBox x:Name="IPtb" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="IP-адрес" Height="40" Grid.Row="3" Grid.Column="1" Foreground="#FFBFA9A9" FontSize="18" GotFocus="IPtb_GotFocus" LostFocus="IPtb_LostFocus"/>
+        <TextBox x:Name="Porttb" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="Порт" Height="40" Grid.Row="4" Grid.Column="1" Foreground="#FFBFA9A9" FontSize="18" GotFocus="Porttb_GotFocus" LostFocus="Porttb_LostFocus"/>
+        <Button x:Name="btnConnect" Content="Connect" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="5" Grid.Column="1" Height="50" Width="200" FontSize="16" Background="#FFDAA5A5" BorderBrush="{x:Null}" Foreground="#FFC38888" FontWeight="Bold" Click="btnConnect_Click"/>
+    </Grid>
+</Page>
